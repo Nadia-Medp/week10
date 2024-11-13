@@ -1,0 +1,100 @@
+
+body.page1 {
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+  width: 100%; /* Ensure full width for centering */
+}
+
+.door {
+  text-align: center;
+  max-width: 100%; /* Make sure the container doesn't have any width restrictions */
+}
+
+.detail {
+  max-width: 20%; /* Controls image width */
+  height: auto;
+  display: block; /* Makes the image a block element */
+  margin: 0 auto; /* Centers the image horizontally */
+}
+
+#doorButton {
+  display: block; /* Makes the button a block element */
+  margin: 10px auto; /* Centers the button horizontally and adds spacing */
+  padding: 10px 20px;
+  background-color: #CFC0BA;
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#doorButton:hover {
+  background-color: #DEC5B8;
+}
+
+
+body{
+ background-image: url('images/space.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex; /* set max width of .container but display body as flex and center it's contents */
+  justify-content: center; /* this centers the contents of the body like . container */
+  background-color: #CFD8DC;
+  flex-wrap: wrap; /* wrap */
+  max-width: 1000px;
+    box-sizing: border-box;
+    box-sizing: inherit;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+
+
+header {
+  background: #F8BBD0;
+  flex: 1 0 100%; /* grow on, shrink off, span width of browser */
+  order: 1; /* display order regardless of html struture */
+  top: 0px;
+  position: sticky;
+}
+
+main {
+background: #B2DFDB;
+flex: 1 1 500px;
+order: 3;
+text-align: center;
+}
+
+nav {
+  background: #D1C4E9;
+  flex: 1 0 200px; /* grow but not shrink less than basis */
+  order: 2;
+}
+
+aside {
+  background: #B3E5FC;
+  flex: 1 0 200px; /* grow but not shrink less than basis */
+  order: 4;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+footer {
+  background: #FFECB3;
+    flex: 1 0 100%; /* grow on, shrink off, span width of browser */
+    order: 5;
+}
